@@ -1,0 +1,103 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+}
+.register-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.register-header h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.register-header p {
+  color: #666;
+  font-size: 16px;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-group label {
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+}
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.form-group input:focus {
+  outline: none;
+  border-color: #e41e31;
+  box-shadow: 0 0 0 2px rgba(228, 30, 49, 0.1);
+}
+.error-message {
+  color: #e41e31;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.register-button {
+  background-color: #e41e31;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.register-button:hover {
+  background-color: #c41828;
+}
+.register-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.register-footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+.register-footer a {
+  color: #e41e31;
+  text-decoration: none;
+  font-weight: 500;
+}
+.register-footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 480px) {
+  .register-container {
+    padding: 20px;
+  }
+  .register-header h1 {
+    font-size: 24px;
+  }
+  .register-header p {
+    font-size: 14px;
+  }
+} 
